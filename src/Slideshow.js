@@ -18,10 +18,6 @@ const Slideshow = () => {
             if (activeIndex === dataLength - 1) {
                 timeout = setTimeout(() => setActiveIndex(0), slideTimeout);
             }
-
-            return () => {
-                clearTimeout(timeout);
-            };
         }
     }, [isPlay, activeIndex])
 
